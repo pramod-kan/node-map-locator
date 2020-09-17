@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch-and-map</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+  <h1>Map location</h1>
+
+<div class="container">
+  <div class="row mt-3">
+      <div class="col-md-6">
+          <h3>Add new post</h3>
+          <form class="add-post-form">
+           <div class="form-group">
+               <label for="title">Location name</label>
+               <input type="text" class="form-control" id="title-value">
+           </div>
+           <div class="form-group">
+               <label for="title">latitude</label>
+               <input type="text" class="form-control" id="lat">
+                  <label for="title">longitude</label>
+               <input type="text" class="form-control" id="lng">
+                <button id="locateme" class="btn btn-dark btn-sm">Find me</button>
+           </div>
+           <div class="form-group">
+               <label for="body">Description about the place</label>
+               <textarea class="form-control" id="body-value"></textarea>
+           </div>
+           <button id="db_data"  class="btn btn-primary">Add post</button>
+          </form>
+      </div>
+  </div>
+
+  <div class="posts-list row">
+  
+     
+  </div>
+</div>
+
+  
+  <script src="main.js">
+ 
+    
+  </script>
+</body>
+</html>

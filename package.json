@@ -1,0 +1,16 @@
+{
+  "name": "fetch-and-map",
+  "version": "1.0.0",
+  "description": "this web-app will geo-locate user",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pramod sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.4"
+  }
+}

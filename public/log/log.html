@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location logs</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map{
+            height: 500px;
+        }
+    </style>   
+</head>
+<body>
+    <h1>Location logs</h1>
+    <div id="map"></div> 
+    <script>
+          let map=L.map('map').setView([0,0],2);
+    //  let marker=L.marker([0,0]).addTo(map)
+    //  let marker1=L.marker([51.507351,-0.127758]).addTo(map)  
+
+     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=7WQRAjVODqae5oCDcZlN',{
+         attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+        
+     }).addTo(map);
+
+        // marker.setLatLng([latitude,longitude]);
+    </script>
+</body>
+</html>
